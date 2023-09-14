@@ -5,7 +5,7 @@ class GalacticSpaceCraft {
 public:
     GalacticSpaceCraft(int x, int y, int z, char initialDirection, char initialDirection1)
         : x_(x), y_(y), z_(z), direction_(initialDirection), direction1_(initialDirection1) {}
-
+//For moving forward we check the direction and move according one step at a time
     void moveForward() {
         switch (direction_) {
             case 'N':
@@ -28,7 +28,7 @@ public:
                 break;
         }
     }
-
+//For moving Backward we check the direction and move according one step at a time
     void moveBackward() {
         switch (direction_) {
             case 'N':
@@ -51,7 +51,7 @@ public:
                 break;
         }
     }
-
+    //We rotate by 90 degree to left by checking the current direction
     void turnLeft() {
         switch (direction_) {
             case 'N':
