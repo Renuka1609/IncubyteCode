@@ -224,6 +224,7 @@ public:
 private:
     int x_, y_, z_;
     char direction_;
+// MAINTAINED DIRECTION 1 TO STORE THE NORMAL DIRECTION BEFORE UP OR DOWN MOVEMENT SO THAT RIGHT AND LEFT TURNS WILL BE RECORDED ACCORDINGLY
     char direction1_;
 };
 
